@@ -3,13 +3,10 @@ import sys
 import time
 import numpy as np
 
-if len(sys.argv) == 4:
-    seed = int(sys.argv[1])
-    n = int(sys.argv[2])
-    p = int(sys.argv[3])
-    print(seed, n, p)
-else:
-    print("error")
+seed = 1
+n = 8
+p = 8
+print(seed, n, p)
 
 np.random.seed(seed)
 
