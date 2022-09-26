@@ -2,10 +2,21 @@ import random
 import sys 
 import time
 import numpy as np
+from fitness import *
 
-seed = 1
-n = 8
-p = 4
+
+if len(sys.argv) == 4:
+    seed=int(sys.argv[1])
+    n=int(sys.argv[2])
+    p=int(sys.argv[3])
+  
+    print(seed,n,p)
+else:
+    print("Error")
+    print("Ingrese denuevo los parametros")
+    sys.exit(0)
+
+tiempo_proceso_ini = time.process_time()
 
 np.random.seed(seed)
 
@@ -16,24 +27,8 @@ for k in range(p):
     np.random.shuffle(poblacion[k])
     
 print(poblacion)
-ValorFitness=[]
-fitness=[]
-for h in range(p):
-    ValorFitness.append(0) 
-    
-def FitnessFunction(poblacion):
-    for i in range(0, 4):
-        for j in range(0, 7):
-            for k in range(j+1, 8):
-                if poblacion[i][j]==poblacion[i][k]:
-                    ValorFitness[i] += 1
-                if poblacion[i][j]-poblacion[i][k] == j-k or poblacion[i][j]-poblacion[i][k] == k-j:
-                    ValorFitness[i] += 1
-                    
-    for q in range(p):
-        fitness.append(ValorFitness[q])
-    return fitness
 
-f = FitnessFunction(poblacion)
+
+f = FuncionFitness(poblacion, p, n)
 
 print(f)
