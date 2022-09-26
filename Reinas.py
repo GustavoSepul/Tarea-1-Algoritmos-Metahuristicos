@@ -2,6 +2,7 @@ import random
 import sys 
 import time
 import numpy as np
+from fitness import *
 
 
 if len(sys.argv) == 4:
@@ -26,24 +27,8 @@ for k in range(p):
     np.random.shuffle(poblacion[k])
     
 print(poblacion)
-ValorFitness=[]
-fitness=[]
-for h in range(p):
-    ValorFitness.append(0) 
-    
-def FuncionFitness(poblacion):
-    for i in range(0, p):
-        for j in range(0, n):
-            for k in range(j+1, n):
-                if poblacion[i][j]==poblacion[i][k]:
-                    ValorFitness[i] += 1
-                if poblacion[i][j]-poblacion[i][k] == j-k or poblacion[i][j]-poblacion[i][k] == k-j:
-                    ValorFitness[i] += 1
-                    
-    for q in range(p):
-        fitness.append(ValorFitness[q])
-    return fitness
 
-f = FuncionFitness(poblacion)
+
+f = FuncionFitness(poblacion, p, n)
 
 print(f)
