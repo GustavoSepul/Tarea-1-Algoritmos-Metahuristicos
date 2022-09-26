@@ -3,9 +3,19 @@ import sys
 import time
 import numpy as np
 
-seed = 1
-n = 8
-p = 4
+
+if len(sys.argv) == 4:
+    seed=int(sys.argv[1])
+    n=int(sys.argv[2])
+    p=int(sys.argv[3])
+  
+    print(seed,n,p)
+else:
+    print("Error")
+    print("Ingrese denuevo los parametros")
+    sys.exit(0)
+
+tiempo_proceso_ini = time.process_time()
 
 np.random.seed(seed)
 
@@ -21,10 +31,10 @@ fitness=[]
 for h in range(p):
     ValorFitness.append(0) 
     
-def FitnessFunction(poblacion):
-    for i in range(0, 4):
-        for j in range(0, 7):
-            for k in range(j+1, 8):
+def FuncionFitness(poblacion):
+    for i in range(0, p):
+        for j in range(0, n):
+            for k in range(j+1, n):
                 if poblacion[i][j]==poblacion[i][k]:
                     ValorFitness[i] += 1
                 if poblacion[i][j]-poblacion[i][k] == j-k or poblacion[i][j]-poblacion[i][k] == k-j:
@@ -34,6 +44,6 @@ def FitnessFunction(poblacion):
         fitness.append(ValorFitness[q])
     return fitness
 
-f = FitnessFunction(poblacion)
+f = FuncionFitness(poblacion)
 
 print(f)
