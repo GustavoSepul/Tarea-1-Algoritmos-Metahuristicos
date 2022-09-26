@@ -1,8 +1,8 @@
-
 import sys
 import random
 import time
 import numpy as np
+from fitness import *
 
 
 if len(sys.argv) == 4:
@@ -27,25 +27,18 @@ for k in range(tamaño_población):
 
 print(poblacion)
 
-def fitness(tamaño_población):
-    tamaño_p = len(tamaño_población)
-    diag_izq_der=[0] * (2*tamaño_p-1)
-    diag_der_izq=[0] * (2*tamaño_p-1)
-
-    for i in range(tamaño_p):
-        diag_izq_der[i+tamaño_población[i]] += 1
-        diag_der_izq[tamaño_p-1-i+tamaño_población[i]] += 1
-    
-    suma = 0
-    for i in range(2*tamaño_p-1):
-        if diag_izq_der[i]>1:
-            suma += diag_izq_der[i]-1 
-        if diag_der_izq[i]>1:
-            suma+=diag_der_izq[i]-1
-    return suma
-
-f = fitness(tamaño_población)
+f = FuncionFitness(poblacion, tamaño_población, tamaño_tablero)
 
 print(f)
+
+def FuncionSeleccion(f,tamazo_poblacion):
+    probabilidades = []
+    probabilidad = np.sum(f)
     
+    probabilidades.append(f/probabilidad)
+    return probabilidades
+
+pr = FuncionSeleccion(f,p)
+print(pr[0])
+
 
