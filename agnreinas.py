@@ -43,5 +43,9 @@ def fitness(tamaño_población):
         if diag_der_izq[i]>1:
             suma+=diag_der_izq[i]-1
     return suma
+
+f = fitness(tamaño_población)
+
+print(f)
     
 
