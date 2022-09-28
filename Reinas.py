@@ -32,10 +32,10 @@ print(poblacion)
 
 f = FuncionFitness(poblacion, p, n)
 
-print(f)
-
-def FuncionSeleccion(f,p):
+'''
+def FuncionSeleccion(f):
     probabilidad = np.sum(f)
+    print(probabilidad)
     probabilidades = f/probabilidad
     probabilities = [sum(probabilidades[:i+1]) 
                      for i in range(len(probabilidades))]
@@ -46,9 +46,33 @@ def FuncionSeleccion(f,p):
     seleccionado = []
     for (i, individual) in enumerate(poblacion):
         if r <= pr[i]:
-            seleccionado.append(list(individual))
+            seleccionado=list(individual)
             break
     return seleccionado
+'''    
     
-selec = FuncionSeleccion(f,p)
-print(selec)
+
+def Seleccionar_padres(poblacion,valor_fitness):
+  padres = []
+  total = sum(valor_fitness)
+  porcentaje_fitness = [x/total for x in valor_fitness]
+  fitness_acumulado = []
+  j = 0
+  for i in porcentaje_fitness:
+    j+=i
+    fitness_acumulado.append(j)
+  print(fitness_acumulado)
+  for r in range(2):
+    n_random = random.uniform(0, 1)
+    print(n_random)
+    individual = 0
+    for q in fitness_acumulado:
+      if(n_random<=q):
+        padres.append(poblacion[individual])
+        print(poblacion[individual])
+        break
+      individual+=1
+      
+  return padres
+aaa = Seleccionar_padres(poblacion,f)
+print(aaa)
