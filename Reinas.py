@@ -3,6 +3,8 @@ import sys
 import time
 import numpy as np
 from fitness import *
+from cruza import *
+from ruleta import *
 
 
 #Definicion de variables
@@ -24,8 +26,8 @@ np.random.seed(seed)
 poblacion = np.zeros((p,n),int)
 
 for k in range(p):
-    poblacion[k]=np.arange(0,n)
-    np.random.shuffle(poblacion[k])
+	poblacion[k]=np.arange(0,n)
+	np.random.shuffle(poblacion[k])
     
 print(poblacion)
 
@@ -38,7 +40,7 @@ def FuncionSeleccion(f):
     print(probabilidad)
     probabilidades = f/probabilidad
     probabilities = [sum(probabilidades[:i+1]) 
-                     for i in range(len(probabilidades))]
+    for i in range(len(probabilidades))]
     pr = probabilities
     print(pr)
     r = random.random()
@@ -52,27 +54,6 @@ def FuncionSeleccion(f):
 '''    
     
 
-def Seleccionar_padres(poblacion,valor_fitness):
-  padres = []
-  total = sum(valor_fitness)
-  porcentaje_fitness = [x/total for x in valor_fitness]
-  fitness_acumulado = []
-  j = 0
-  for i in porcentaje_fitness:
-    j+=i
-    fitness_acumulado.append(j)
-  print(fitness_acumulado)
-  for r in range(2):
-    n_random = random.uniform(0, 1)
-    print(n_random)
-    individual = 0
-    for q in fitness_acumulado:
-      if(n_random<=q):
-        padres.append(poblacion[individual])
-        print(poblacion[individual])
-        break
-      individual+=1
-      
-  return padres
 aaa = Seleccionar_padres(poblacion,f)
+# a = cruza()
 print(aaa)
