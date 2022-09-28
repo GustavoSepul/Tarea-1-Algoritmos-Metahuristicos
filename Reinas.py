@@ -7,8 +7,8 @@ from fitness import *
 
 
 seed = int(input("Igrese la semilla:"))
-n = int(input("Igrese la semilla:"))
-p = int(input("Igrese la semilla:"))
+n = int(input("Igrese el numero de reinas:"))
+p = int(input("Igrese la población:"))
 
 print(seed,n,p)
 
