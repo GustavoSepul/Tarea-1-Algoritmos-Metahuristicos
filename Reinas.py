@@ -31,11 +31,20 @@ f = FuncionFitness(poblacion, p, n)
 print(f)
 
 def FuncionSeleccion(f,p):
-    probabilidades = []
     probabilidad = np.sum(f)
+    probabilidades = f/probabilidad
+    probabilities = [sum(probabilidades[:i+1]) 
+                     for i in range(len(probabilidades))]
+    pr = probabilities
+    print(pr)
+    r = random.random()
+    print(r)
+    seleccionado = []
+    for (i, individual) in enumerate(poblacion):
+        if r <= pr[i]:
+            seleccionado.append(list(individual))
+            break
+    return seleccionado
     
-    probabilidades.append(f/probabilidad)
-    return probabilidades
-
-pr = FuncionSeleccion(f,p)
-print(pr[0])
+selec = FuncionSeleccion(f,p)
+print(selec)
