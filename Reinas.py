@@ -5,12 +5,16 @@ import numpy as np
 from fitness import *
 
 
-
+#Definicion de variables
 seed = int(input("Igrese la semilla:"))
 n = int(input("Igrese el numero de reinas:"))
 p = int(input("Igrese la población:"))
 
-print(seed,n,p)
+cruza = 1
+mutacion = 1
+iteraciones = 100
+
+print(seed, n, p, cruza, mutacion, iteraciones)
 
 
 tiempo_proceso_ini = time.process_time()
