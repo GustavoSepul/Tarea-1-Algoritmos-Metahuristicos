@@ -5,16 +5,17 @@ import numpy as np
 from fitness import *
 
 
-if len(sys.argv) == 4:
-    seed=int(sys.argv[1])
-    n=int(sys.argv[2])
-    p=int(sys.argv[3])
-  
-    print(seed,n,p)
-else:
-    print("Error")
-    print("Ingrese denuevo los parametros")
-    sys.exit(0)
+#Definicion de variables
+seed = int(input("Igrese la semilla:"))
+n = int(input("Igrese el numero de reinas:"))
+p = int(input("Igrese la población:"))
+
+cruza = 1
+mutacion = 1
+iteraciones = 100
+
+print(seed, n, p, cruza, mutacion, iteraciones)
+
 
 tiempo_proceso_ini = time.process_time()
 
