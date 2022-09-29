@@ -54,7 +54,7 @@ def FuncionSeleccion(f):
 '''    
     
 
-poblacion = Seleccionar_padres(poblacion, n, p)
+poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
 # a = cruza()
 print(poblacion)
 """"
