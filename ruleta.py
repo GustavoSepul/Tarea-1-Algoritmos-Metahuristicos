@@ -34,7 +34,7 @@ def Seleccionar_padres(poblacion, reinas, p_cruza, p):
         else:
             x = random.uniform(0, 1)
             if(x < p_cruza):
-                hijos = cruza_padres()
+                hijos = cruza_padres(padres)
                 nuevageneracion.append(hijos)
 
     return nuevageneracion

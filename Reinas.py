@@ -2,8 +2,6 @@ import random
 import sys 
 import time
 import numpy as np
-#from fitness import *
-#from cruza import *
 from ruleta import *
 
 
@@ -11,28 +9,31 @@ from ruleta import *
 seed = int(input("Igrese la semilla:"))
 n = int(input("Igrese el numero de reinas:"))
 p = int(input("Igrese la población:"))
-
 p_cruza = int(input("Igrese la probabilidad de cruzar:"))
 mutacion = int(input("Igrese la probabilidad de mutacion:"))
 iteraciones = int(input("Igrese la cantidad de iteraciones:"))
 
 print(seed, n, p, p_cruza, mutacion, iteraciones)
-
 tiempo_proceso_ini = time.process_time()
 
 np.random.seed(seed)
 
 poblacion = np.zeros((p,n),int)
-
 for k in range(p):
 	poblacion[k]=np.arange(0,n)
 	np.random.shuffle(poblacion[k])
-    
 print(poblacion)
 
 
-f = FuncionFitness(poblacion, p, n)
-print(f)
+
+
+
+poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
+print(poblacion)
+
+
+
+
 
 '''
 def FuncionSeleccion(f):
@@ -54,9 +55,7 @@ def FuncionSeleccion(f):
 '''    
     
 
-poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
-# a = cruza()
-print(poblacion)
+
 """"
 def cruza(padre1, padre2, p_cruza):
     r = np.random.random()
