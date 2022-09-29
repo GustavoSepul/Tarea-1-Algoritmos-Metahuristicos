@@ -12,9 +12,9 @@ seed = int(input("Igrese la semilla:"))
 n = int(input("Igrese el numero de reinas:"))
 p = int(input("Igrese la población:"))
 
-p_cruza = 1
-mutacion = 1
-iteraciones = 100
+p_cruza = int(input("Igrese la probabilidad de cruzar:"))
+mutacion = int(input("Igrese la probabilidad de mutacion:"))
+iteraciones = int(input("Igrese la cantidad de iteraciones:"))
 
 print(seed, n, p, p_cruza, mutacion, iteraciones)
 
