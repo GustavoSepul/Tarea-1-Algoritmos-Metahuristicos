@@ -2,8 +2,8 @@ import random
 import sys 
 import time
 import numpy as np
-from fitness import *
-from cruza import *
+#from fitness import *
+#from cruza import *
 from ruleta import *
 
 
@@ -16,8 +16,7 @@ p_cruza = 1
 mutacion = 1
 iteraciones = 100
 
-print(seed, n, p, cruza, mutacion, iteraciones)
-
+print(seed, n, p, p_cruza, mutacion, iteraciones)
 
 tiempo_proceso_ini = time.process_time()
 
@@ -55,9 +54,9 @@ def FuncionSeleccion(f):
 '''    
     
 
-aaa = Seleccionar_padres(poblacion, f, n)
+poblacion = Seleccionar_padres(poblacion, n, p)
 # a = cruza()
-print(aaa)
+print(poblacion)
 """"
 def cruza(padre1, padre2, p_cruza):
     r = np.random.random()
@@ -74,6 +73,6 @@ cruza_padres = cruza(aaa[0], aaa[1],p_cruza)
 print(cruza_padres)
 """
 
-cruza = cruza_padres(aaa[0], aaa[1], p_cruza)
+# cruza = cruza_padres(aaa[0], aaa[1], p_cruza)
 
-print(cruza_padres)
+# print(cruza_padres)
