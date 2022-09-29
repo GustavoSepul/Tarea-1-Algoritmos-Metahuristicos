@@ -33,6 +33,7 @@ print(poblacion)
 
 
 f = FuncionFitness(poblacion, p, n)
+print(f)
 
 '''
 def FuncionSeleccion(f):
@@ -54,6 +55,6 @@ def FuncionSeleccion(f):
 '''    
     
 
-aaa = Seleccionar_padres(poblacion,f)
+aaa = Seleccionar_padres(poblacion, f, n)
 # a = cruza()
 print(aaa)
