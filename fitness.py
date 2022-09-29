@@ -1,3 +1,4 @@
+
 def FuncionFitness(poblacion, p, n):
     ValorFitness=[]
     fitness=[]
