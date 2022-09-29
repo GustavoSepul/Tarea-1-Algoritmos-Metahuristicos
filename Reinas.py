@@ -12,7 +12,7 @@ seed = int(input("Igrese la semilla:"))
 n = int(input("Igrese el numero de reinas:"))
 p = int(input("Igrese la población:"))
 
-cruza = 1
+p_cruza = 1
 mutacion = 1
 iteraciones = 100
 
@@ -58,3 +58,22 @@ def FuncionSeleccion(f):
 aaa = Seleccionar_padres(poblacion, f, n)
 # a = cruza()
 print(aaa)
+""""
+def cruza(padre1, padre2, p_cruza):
+    r = np.random.random()
+    if(r < p_cruza):
+        m = np.random.randint(1, n)
+        hijo1 = np.concatenate([padre1[:m], padre2[m:]])
+        hijo2 = np.concatenate([padre2[m:], padre1[:m]])
+    else:
+        hijo1 = padre1.copy()
+        hijo2 = padre2.copy()
+    return hijo1, hijo2
+
+cruza_padres = cruza(aaa[0], aaa[1],p_cruza)
+print(cruza_padres)
+"""
+
+cruza = cruza_padres(aaa[0], aaa[1], p_cruza)
+
+print(cruza_padres)
