@@ -25,12 +25,13 @@ for k in range(p):
 print(poblacion)
 
 
+for i in range(iteraciones):
+    poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
+    # print(poblacion)
+    #rectificar()
+    #mutacion()
 
-
-
-poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
-print(poblacion)
-
+#seleccionFinal()
 
 
 
@@ -71,7 +72,3 @@ def cruza(padre1, padre2, p_cruza):
 cruza_padres = cruza(aaa[0], aaa[1],p_cruza)
 print(cruza_padres)
 """
-
-# cruza = cruza_padres(aaa[0], aaa[1], p_cruza)
-
-# print(cruza_padres)
