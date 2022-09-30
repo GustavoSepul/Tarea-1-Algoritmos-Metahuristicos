@@ -10,6 +10,9 @@
 ## Instalación
 * La versión utilizada para python será 3.10.
 * Se necesitara instalar la libreria [numpy](https://numpy.org/)
+ ```
+ pip install numpy
+ ```
 
 ## Ejecución del programa
 
@@ -17,8 +20,8 @@
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
 * ***Tamaño del tablero***, número entero entre 1 y N(Tamaño población).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
-* ***Probabilidad de cruza***, número decimal entre 0 y 1.
-* ***Probabilidad de mutación***,  número decimal entre 0 y 1.
+* ***Probabilidad de cruza***, número real 95 = 0.95
+* ***Probabilidad de mutación***,  número real 5 = 0.05
 * ***Número de Iteraciones***, número entero a criterio del usuario.
 
 ## Ejemplo
