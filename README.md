@@ -13,7 +13,7 @@
  ```
  pip install numpy
  ```
- * Link zip [Link](https://github.com/GustavoSepul/Tarea-1-Algoritmos-Metahuristicos/archive/refs/heads/main.zip)
+ * [Link](https://github.com/GustavoSepul/Tarea-1-Algoritmos-Metahuristicos/archive/refs/heads/main.zip) zip
 
 ## Ejecución del programa
  ```
