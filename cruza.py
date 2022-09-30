@@ -7,7 +7,7 @@ def cruza_padres (padres):
     hijos = []
     
     pt = np.random.randint (1, len (padres.T))
-    print(pt)
+    # print(pt)
     c1 = np.concatenate([padres[0][:pt], padres[1][pt:]])
     c2 = np.concatenate([padres[1][:pt], padres[0][pt:]])
     hijos.append(c1)
