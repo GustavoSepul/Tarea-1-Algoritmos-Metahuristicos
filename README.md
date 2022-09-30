@@ -1,6 +1,6 @@
 # Tarea-1-Algoritmos-Metahuristicos
 ## Problema de las N-reinas
-### El problema consistirá principalmente en desarrollar e idear un algoritmo genético que solucione el problema de las N-reinas, el cual consiste en colocar n reinas en un tablero de ajedrez de n x n de tal manera que no sea posible que dos reinas se capturen entre si, es decir, que no estén en la misma fila, ni en la misma columna ni en la misma diagonal.
+### El problema consistirá principalmente en desarrollar e idear un algoritmo genético que solucione el problema de las ***N-reinas***, el cual consiste en colocar n reinas en un tablero de ajedrez de ***n x n*** de tal manera que no sea posible que dos reinas se capturen entre si, es decir, que no estén en la misma fila, ni en la misma columna ni en la misma diagonal.
 
 ## Programas utilizados 
 
