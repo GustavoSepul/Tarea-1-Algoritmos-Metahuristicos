@@ -4,8 +4,8 @@
 
 ## Programas utilizados 
 
-* [GitHub Desktop](https://desktop.github.com/) - Programa de control de versiones
-* [Visual Studio Code](https://visualstudio.microsoft.com/es/) - IDE para la creación del Algoritmo
+* [GitHub Desktop](https://desktop.github.com/) - Herramienta para tener los repositorios en la nube y mantener las versiones.
+* [Visual Studio Code](https://visualstudio.microsoft.com/es/) - IDE y editor para la creación del Algoritmo.
 
 ## Instalación
 * La versión utilizada para python será [3.10.7](https://www.python.org/downloads/).
@@ -22,7 +22,7 @@
 
 ## Definición de Variables
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
-* ***Tamaño del tablero***, número entero entre 1 y N(tamaño población).
+* ***Tamaño del tablero***, número entero entre 1 y N(tamaño tablero).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
 * ***Probabilidad de cruza***, número real 95 = 0.95
 * ***Probabilidad de mutación***,  número real 5 = 0.05
