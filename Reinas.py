@@ -38,5 +38,5 @@ for i in range(iteraciones):
 fit=FuncionFitness(poblacion, p, n)
 max_value = max(fit)
 mejor = fit.index(max_value)
-print("Este es el mejor individuo tras: ",poblacion[mejor])
+print("Este es el mejor individuo: ",poblacion[mejor])
 print("La cantidad de errores que tiene es de: ", (n*((n-1)/2))-max_value)
