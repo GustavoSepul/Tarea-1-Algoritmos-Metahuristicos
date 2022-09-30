@@ -29,11 +29,11 @@ print(poblacion)
 
 for i in range(iteraciones):
     poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
-    print(i, poblacion)
+    # print(i, poblacion)
     rectification(poblacion)
-    print(i, poblacion)
+    # print(i, poblacion)
     mutacion(poblacion, p_mutacion)
-    print(i, poblacion)
+    # print(i, poblacion)
 
 #seleccionFinal()
 
