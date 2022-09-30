@@ -24,18 +24,18 @@
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
 * ***Tamaño del tablero***, número entero entre 1 y N(tamaño tablero).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
-* ***Probabilidad de cruza***, número real entre 0 y 1 (95 = 0.95)
-* ***Probabilidad de mutación***,  número real entre 0 y 1 (5 = 0.05)
+* ***Probabilidad de cruza***, número real entre 0 y 1 (95%)
+* ***Probabilidad de mutación***,  número real entre 0 y 1 (5%)
 * ***Número de Iteraciones***, número entero a criterio del usuario.
 
 ## Ejemplo
 ```
 Ingrese la semilla: 1
-Ingrese el numero de reinas: 5
-Ingrese la población: 5
+Ingrese el numero de reinas: 4
+Ingrese la población: 4
 Ingrese la probabilidad de cruzar: 0.90
-Ingrese la probabilidad de mutacion: 0.20
-Ingrese la cantidad de iteraciones: 100
+Ingrese la probabilidad de mutacion: 0.90
+Ingrese la cantidad de iteraciones: 4
 ```
 
 ### Autores
