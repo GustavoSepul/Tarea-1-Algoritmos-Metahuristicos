@@ -13,7 +13,7 @@
  ```
  pip install numpy
  ```
- * [Link](https://github.com/GustavoSepul/Tarea-1-Algoritmos-Metahuristicos/archive/refs/heads/main.zip) zip
+ * Para bajar el programa haga click en el siguiente [Link](https://github.com/GustavoSepul/Tarea-1-Algoritmos-Metahuristicos/archive/refs/heads/main.zip) zip
 
 ## Ejecución del programa
  ```
@@ -40,5 +40,5 @@ Ingrese la cantidad de iteraciones: 4
 
 ### Autores
 * Diego Araneda Hidalgo - daranedah@ing.ucsc.cl
-* Gustavo Sepulveda Ocampo - gsepulveda@ing.ucsc.cl
+* Gustavo Sepulveda Ocampo - gsepulvedao@ing.ucsc.cl
 * Javier Victoriano Rivas - jvictoriano@ing.ucsc.cl
