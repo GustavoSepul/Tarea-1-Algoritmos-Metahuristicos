@@ -24,8 +24,8 @@
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
 * ***Tamaño del tablero***, número entero entre 1 y N(tamaño tablero).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
-* ***Probabilidad de cruza***, número real 95 = 0.95
-* ***Probabilidad de mutación***,  número real 5 = 0.05
+* ***Probabilidad de cruza***, número real entre 0 y 1(95 = 0.95)
+* ***Probabilidad de mutación***,  número real entre 0 y 1(5 = 0.05)
 * ***Número de Iteraciones***, número entero a criterio del usuario.
 
 ## Ejemplo
