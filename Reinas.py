@@ -3,6 +3,8 @@ import sys
 import time
 import numpy as np
 from ruleta import *
+from rectificacion import *
+from mutacion import *
 
 
 #Definicion de variables
@@ -10,10 +12,10 @@ seed = int(input("Igrese la semilla:"))
 n = int(input("Igrese el numero de reinas:"))
 p = int(input("Igrese la población:"))
 p_cruza = int(input("Igrese la probabilidad de cruzar:"))
-mutacion = int(input("Igrese la probabilidad de mutacion:"))
+p_mutacion = int(input("Igrese la probabilidad de mutacion:"))
 iteraciones = int(input("Igrese la cantidad de iteraciones:"))
 
-print(seed, n, p, p_cruza, mutacion, iteraciones)
+print(seed, n, p, p_cruza, p_mutacion, iteraciones)
 tiempo_proceso_ini = time.process_time()
 
 np.random.seed(seed)
@@ -27,9 +29,11 @@ print(poblacion)
 
 for i in range(iteraciones):
     poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
-    # print(poblacion)
-    #rectificar()
-    #mutacion()
+    print(i, poblacion)
+    rectification(poblacion)
+    print(i, poblacion)
+    mutacion(poblacion, p_mutacion)
+    print(i, poblacion)
 
 #seleccionFinal()
 
