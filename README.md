@@ -16,6 +16,9 @@
  * Link zip
 
 ## Ejecución del programa
+ ```
+ python.exe .\Reinas.py 1 5 5 0.90 0.20 100
+ ```
 
 ## Definición de Variables
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
