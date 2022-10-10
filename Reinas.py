@@ -26,16 +26,15 @@ else:
     print("error")
     sys.exit(0)
 
-
-print(seed, n, p, p_cruza, p_mutacion, iteraciones)
 tiempo_proceso_ini = time.process_time()
-
+i = 0
 np.random.seed(seed)
 
 poblacion = np.zeros((p,n),int)
 for k in range(p):
 	poblacion[k]=np.arange(0,n)
 	np.random.shuffle(poblacion[k])
+print("Poblacion inicial :")
 print(poblacion)
 
 while iteraciones > 0:
@@ -46,15 +45,21 @@ while iteraciones > 0:
 
     poblacion = Seleccionar_padres(poblacion, n, p_cruza, p)
     # print(i, poblacion)
-    rectification(poblacion)
+    rectification(poblacion,n)
     # print(i, poblacion)
     mutacion(poblacion, p_mutacion)
     # print(i, poblacion)
     iteraciones= iteraciones -1
+    i=i+1
 
 fit=FuncionFitness(poblacion, p, n)
 max_value = max(fit)
-mejor = fit.index(max_value)
-print("Este es el mejor individuo: ",poblacion[mejor])
-print("La cantidad de choques que tiene es de: ", (n*((n-1)/2))-max_value)
-print("Tiempo de busqueda: ", tiempo_proceso_ini)
+mejor = np.where(fit==max_value)
+if(len(mejor[0]) > 1):
+    print("Estos son los mejores individuos tras", i,"iteraciones: \n",poblacion[mejor])
+    print("La cantidad de choques que tienen es de: ", int((n*((n-1)/2))-max_value))
+    print("Tiempo de busqueda: ", tiempo_proceso_ini, "segundos")
+else:
+    print("Este es el mejor individuos tras", i,"iteraciones: \n",poblacion[mejor])
+    print("La cantidad de choques que tiene es de: ", int((n*((n-1)/2))-max_value))
+    print("Tiempo de busqueda: ", tiempo_proceso_ini, "segundos")

@@ -18,12 +18,12 @@ def Seleccionar_padres(poblacion, reinas, p_cruza, p):
         j = 0
         for i in porcentaje_fitness: #Se calculan los porcentajes de la ruleta
             j+=i
-            fitness_acumulado.append(j)
+            fitness_acumulado = np.append(fitness_acumulado, j)
         # print(fitness_acumulado)
         primerpadre = -1
         padres_cont = 0 
         while(padres_cont != 2):
-            n_random = random.uniform(0, 1)
+            n_random = np.random.random(1)[0]
             # print(n_random)
             individual = 0
             for q in fitness_acumulado:#Se toma al padre correspondiente para cruzar
@@ -34,15 +34,15 @@ def Seleccionar_padres(poblacion, reinas, p_cruza, p):
                     padres_cont += 1
                     break
                 individual+=1  
-        if(ngcont == p-1):
-            nuevageneracion.append(padres[0])
-        else:
-            x = random.uniform(0, 1)
-            if(x < p_cruza):
-                hijos = cruza_padres(padres)
-                nuevageneracion[ngcont] = hijos[0]
-                ngcont += 1
+        
+        x = np.random.random(1)[0]
+        if(x < p_cruza):
+            hijos = cruza_padres(padres)
+            nuevageneracion[ngcont] = hijos[0]
+            ngcont += 1
+            if(ngcont != p):
                 nuevageneracion[ngcont] = hijos[1]
-                ngcont += 1
+                ngcont += 1  
+        
 
     return nuevageneracion
