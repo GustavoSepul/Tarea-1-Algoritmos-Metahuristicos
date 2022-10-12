@@ -8,22 +8,12 @@
 * [Visual Studio Code](https://visualstudio.microsoft.com/es/) - IDE y editor para la creación del Algoritmo.
 
 ## Instalación
-Existen dos formas de ejecutar el programa
-### Usando pip
 * La versión utilizada para python será [3.10.7](https://www.python.org/downloads/).
 * Se necesitara instalar la libreria [numpy](https://numpy.org/) en la IDE que se este trabajando.
  ```
  pip install numpy
  ```
  * Para bajar el programa haga click en el siguiente [Link](https://github.com/GustavoSepul/Tarea-1-Algoritmos-Metahuristicos/archive/refs/heads/main.zip)
-
-### Usando anaconda
-* Se debe descargar [Anaconda](https://www.anaconda.com).
-* Una vez dentro se debe abrir visual studio code desde anaconda.
-Al abrir vscode desde anaconda este usará el interpretador de anaconda para ejecutar el codigo con el comando
-```
-ctrl+F5
-```
 
 ## Ejecución del programa
  ```
