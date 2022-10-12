@@ -1,9 +1,10 @@
-
+import numpy as np
 def FuncionFitness(poblacion, p, n):
     ValorFitness=[]
     fitness=[]
     for h in range(p):
-        ValorFitness.append(n*((n-1)/2)) 
+        ValorFitness = np.append(ValorFitness,n*((n-1)/2)) 
+        
     for i in range(0, p):
         for j in range(0, n):
             for k in range(j+1, n):
@@ -13,5 +14,5 @@ def FuncionFitness(poblacion, p, n):
                     ValorFitness[i] -= 1
                     
     for q in range(p):
-        fitness.append(ValorFitness[q])
+        fitness = np.append(fitness, ValorFitness[q])
     return fitness

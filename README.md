@@ -37,7 +37,20 @@ Ingrese la probabilidad de cruzar: 0.90
 Ingrese la probabilidad de mutacion: 0.90
 Ingrese la cantidad de iteraciones: 4
 ```
-
+## Resultados
+```
+Población Inicial:
+[[2 1 4 0 3]
+ [0 2 4 3 1]
+ [2 3 1 4 0]
+ [3 0 1 2 4]
+ [3 0 1 2 4]
+ [1 2 0 3 4]]
+Este es el mejor individuo tras 3 iteraciones:
+[[3 0 2 4 1]]
+La cantidad de choques que tiene es de:  0
+Tiempo de busqueda:  0.265625 segundos
+```
 ### Autores
 * Diego Araneda Hidalgo - daranedah@ing.ucsc.cl
 * Gustavo Sepulveda Ocampo - gsepulvedao@ing.ucsc.cl
