@@ -21,7 +21,7 @@
  ```
 
 ## Definición de Variables
-* ***Seed***, el cuál sera un número real randomico entre 0 y 1.
+* ***Seed***, el cuál sera un número real randomico mayor a 0.
 * ***Tamaño del tablero***, número entero entre 1 y N(tamaño tablero).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
 * ***Probabilidad de cruza***, número entero entre 0 y 100 (95%)
