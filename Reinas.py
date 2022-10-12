@@ -38,7 +38,7 @@ else:
 p_cruza = p_cruza/100
 p_mutacion = p_mutacion/100
 
-tiempo_proceso_ini = time.process_time()
+tiempo_proceso_ini = time.time()
 i = 0
 np.random.seed(seed)
 
@@ -69,4 +69,5 @@ max_value = max(fit)
 mejor = np.where(fit==max_value)
 print("Este es el mejor individuo tras", i,"iteraciones: \n",poblacion[mejor[0][0]])
 print("La cantidad de choques que tiene es de: ", int((n*((n-1)/2))-max_value))
-print("Tiempo de busqueda: ", tiempo_proceso_ini, "segundos")
+tiempo_proceso_fin = time.time()
+print("Tiempo de busqueda: ", round(tiempo_proceso_fin-tiempo_proceso_ini, 3), "segundos")
