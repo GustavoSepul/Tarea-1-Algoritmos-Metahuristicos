@@ -9,7 +9,7 @@
 
 ## Instalación
 * La versión utilizada para python será [3.10.7](https://www.python.org/downloads/).
-* Se necesitara instalar la libreria [numpy](https://numpy.org/)
+* Se necesitara instalar la libreria [numpy](https://numpy.org/) en la IDE que se este trabajando.
  ```
  pip install numpy
  ```
