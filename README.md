@@ -35,12 +35,12 @@ python.exe .\Reinas.py 1 5 5 90 20 100
 ## Resultados
 ```
 Población Inicial:
-[2 1 4 0 3]
+[[2 1 4 0 3]
  [0 2 4 3 1]
  [2 3 1 4 0]
  [3 0 1 2 4]
  [3 0 1 2 4]
- [1 2 0 3 4]
+ [1 2 0 3 4]]
 Este es el mejor individuo tras 3 iteraciones:
 [3 0 2 4 1]
 La cantidad de choques que tiene es de:  0
