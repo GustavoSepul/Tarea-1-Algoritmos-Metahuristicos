@@ -44,7 +44,7 @@ Población Inicial:
 Este es el mejor individuo tras 3 iteraciones:
 [3 0 2 4 1]
 La cantidad de choques que tiene es de:  0
-Tiempo de busqueda:  0.265625 segundos
+Tiempo de busqueda:  0.265 segundos
 ```
 ### Autores
 * Diego Araneda Hidalgo - daranedah@ing.ucsc.cl
