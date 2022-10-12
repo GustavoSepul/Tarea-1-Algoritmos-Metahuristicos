@@ -17,37 +17,32 @@
 
 ## Ejecución del programa
  ```
- python.exe .\Reinas.py 1 5 5 0.90 0.20 100
+ .\Reinas.py semilla tamaño_tablero tamaño_población probabilidad_cruza probabilidad_mutación número_iteraciones
  ```
 
 ## Definición de Variables
 * ***Seed***, el cuál sera un número real randomico entre 0 y 1.
 * ***Tamaño del tablero***, número entero entre 1 y N(tamaño tablero).
 * ***Tamaño de la poblacion***, número entero a criterio del usuario.
-* ***Probabilidad de cruza***, número real entre 0 y 1 (95%)
-* ***Probabilidad de mutación***,  número real entre 0 y 1 (5%)
+* ***Probabilidad de cruza***, número entero entre 0 y 100 (95%)
+* ***Probabilidad de mutación***,  número entero entre 0 y 100 (5%)
 * ***Número de Iteraciones***, número entero a criterio del usuario.
 
 ## Ejemplo
 ```
-Ingrese la semilla: 1
-Ingrese el numero de reinas: 4
-Ingrese la población: 4
-Ingrese la probabilidad de cruzar: 0.90
-Ingrese la probabilidad de mutacion: 0.90
-Ingrese la cantidad de iteraciones: 4
+python.exe .\Reinas.py 1 5 5 90 20 100
 ```
 ## Resultados
 ```
 Población Inicial:
-[[2 1 4 0 3]
+[2 1 4 0 3]
  [0 2 4 3 1]
  [2 3 1 4 0]
  [3 0 1 2 4]
  [3 0 1 2 4]
- [1 2 0 3 4]]
+ [1 2 0 3 4]
 Este es el mejor individuo tras 3 iteraciones:
-[[3 0 2 4 1]]
+[3 0 2 4 1]
 La cantidad de choques que tiene es de:  0
 Tiempo de busqueda:  0.265625 segundos
 ```
