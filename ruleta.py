@@ -44,5 +44,4 @@ def Seleccionar_padres(poblacion, reinas, p_cruza, p):
                 nuevageneracion[ngcont] = hijos[1]
                 ngcont += 1  
         
-
     return nuevageneracion

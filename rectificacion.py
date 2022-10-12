@@ -11,5 +11,3 @@ def rectification(hijos, n):
                 hijos[i][j] = np.random.choice(opciones,1)
                 opciones.remove(hijos[i][j])
     return hijos
-
-
